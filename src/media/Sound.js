@@ -832,7 +832,7 @@
 				else
 				{
 					if (Date.now() - this._lastAudioTime >= 30000)
-						_fixAudioContext();
+						//_fixAudioContext();
 					this._numPlayingAudio = 1;
 					this._lastAudioTime = -1;
 				}
@@ -964,7 +964,7 @@
 		{
 			if (this._lastAudioTime > 0 && Date.now() - this._lastAudioTime >= 30000)
 			{
-				_fixAudioContext();
+				//_fixAudioContext();
 			}
 		}
 
@@ -1320,7 +1320,7 @@
 		if (this._fixAndroidAudio)
 		{
 			if (this._lastAudioTime > 0 && Date.now() - this._lastAudioTime > 30000)
-				_fixAudioContext();
+				//_fixAudioContext();
 
 			this._numPlayingAudio++;
 			this._lastAudioTime = -1;
